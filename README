@@ -1,11 +1,10 @@
-main runner :   python m.py
+All rights reserved.
 
+Python version:
+Use Python 3.x.
 
+In linux run this utility like this:
 
-to run use python 3.6. 
-In linux mint run like this: 
-
-%  python3.6 m.py 
-
-
-
+1. configure config.json
+2. run:
+   % python3.6 m.py
