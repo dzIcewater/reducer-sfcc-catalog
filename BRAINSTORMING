@@ -1,0 +1,49 @@
+
+
+
+
+steps:
+
+
+-sitecat pass 1: get all online categories - list.
+    #make reduced sitecat file
+    #makeReducedSitecatalog() #
+   
+- mastercat : make reduced mastercatalog.   get masters and variants lists into memory.  then write to intermediate files.
+
+
+     makeReducedCat():
+        
+        
+        #mcr.makeReducedMasterCatStage1()   ->   get master / variants lists.  online, searchable, masters are in online categories, 
+    
+        #mcr.writeProductsIntermediateFiles() #write the intermediate files  : masters+variants. 
+        
+        mcr.readProductsIntermediateFiles() #read these (masters+variants) in case we want to start from here (and thus not doing makeReducedSitecatMap() to save time)
+        
+        mcr.makeReducedSiteCatalog():
+        
+        #filter masters/variants based on site catalog reasonable structure.
+        
+        #does raw text parsing as this is the final step.
+        mcr.makeReducedMasterCatStage2()
+        
+    
+    
+    
+    
+    
+    
+    
+Tree : 
+
+
+
+cat, None
+cat, parent
+cat, parent
+cat, parent
+cat, parent
+cat, parent
+cat, parent
+cat, parent

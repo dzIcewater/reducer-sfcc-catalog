@@ -1,0 +1,54 @@
+
+
+ideas brainstorming
+
+what we want to filter :
+- 300 products
+- only online
+- at least one for every online category (assignments are in site-catalog file)
+- intermediate goals: 
+   
+
+loops over sitecat file:
+ - category definitions,  online-flag = true    required
+ - category-assignment,   category / product-id   relationship  of a master. 
+ -> make a list for these.  in a file or in mem. 
+ 
+ 
+ 
+loops over the master catalog xml: 
+1.  sax;
+    -make a file that has every product obj storing: sku,starttaglocation/endtaglocation
+    -make list of skus(master-only) and also use its variants in <variants> section. 
+    
+    that satisfy filters.
+         filters:
+            - must be online :       online-flag  true
+            - must be categorized via the sitecatalog:    this master sku is found in the sitecat list.
+            
+            
+2.  raw parse mastercat : 
+    -get all variants of the found items from loop 1.
+    
+    
+    
+
+
+
+devsitecat.xml :  
+
+    <category-assignment category-id="men-sale-shirts" product-id="159466">
+        <primary-flag>true</primary-flag>
+    </category-assignment>
+
+it has categories that are online, or off. 
+
+    <category category-id="trend-report-stripes-for-days">
+        <display-name xml:lang="x-default">Stripes for Days</display-name>
+        <online-flag>true</online-flag>
+        
+and       assignments: 
+    <category-assignment category-id="Hawaii" product-id="410764"/>
+
+
+

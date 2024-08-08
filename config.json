@@ -1,0 +1,31 @@
+{
+  "DEBUGFLAG": 0,
+  "infilesDir": "infiles",
+  "outfilesDir": "outfiles",
+  "catalog": "catalog.xml",
+  "masterCatalogOutfile": "masterCatalogOut.xml",
+  "siteCatalogOutfile": "siteCatalogOut.xml",
+  "site-id": "brandUS",
+  "inventoryOutfile": "inventoryOut.xml",
+  "inventoryOutGlobal": "br-inventory-us.xml",
+  "inventoryOutEast": "br-inventory-us-east.xml",
+  "inventoryOutWest": "br-inventory-us-west.xml",
+  "testCatalog": "devmastertest1.xml",
+  "sitecatalog": "devsitecat.xml",
+  "testSitecatalog": "devsitecat.xml",
+  "masterListFileName": "masters.txt",
+  "variantListFileName": "variants.txt",
+  "chosenCategoriesListFilename": "chosenCategories.txt",
+  "allCategoriesListFilename": "allCategories.txt",
+  "onlineCategoriesListFilename": "onlineCategories.txt",
+  "catalogOut": "out.xml",
+  "MAXPRODUCTCOUNT": 300,
+  "MAXVARIANTCOUNTPERMASTER": 2,
+  "REQUIREDMASTERS": ["422962", "422987"],
+  "filters": [
+    {
+      "type": "attribute",
+      "id": "online-flag"
+    }
+  ]
+}
